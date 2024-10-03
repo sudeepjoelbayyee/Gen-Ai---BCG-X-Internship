@@ -8,7 +8,7 @@ final_financial_report = pd.read_csv('Final_Financial_Report.csv')
 summary_financial_analysis = pd.read_csv('summary_financial_analysis.csv')
 
 # Initialize the model with your API key
-model = ChatGroq(model="mixtral-8x7b-32768", api_key='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')
+model = ChatGroq(model="mixtral-8x7b-32768", api_key='YOUR_GROQ_API_KEY_HERE')
 
 # Generate the prompt structure including Assets, Liabilities, and Cash Flow from Operations
 def create_prompt(final_report, summary_report):
